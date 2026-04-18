@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RailHygiene — Nishanth Kesavan</title>
+  <meta name="description" content="RailHygiene: Check train coach hygiene ratings before you board. Enter PNR and rate anonymously. An Android app by Nishanth Kesavan.">
+  <meta property="og:title" content="RailHygiene — Train Cleanliness App">
+  <meta property="og:description" content="Check train coach hygiene ratings before you board. Enter PNR & rate anonymously.">
+  <meta property="og:url" content="https://nishanthkesavan.in/projects/railhygiene/">
+  <link rel="canonical" href="https://nishanthkesavan.in/projects/railhygiene/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚂</text></svg>">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo"><span class="navbar__logo-dot"></span>NK</a>
+      <div class="navbar__links">
+        <a href="/" class="navbar__link">Home</a>
+        <a href="/about/" class="navbar__link">About</a>
+        <a href="/projects/" class="navbar__link active">Projects</a>
+        <a href="/#contact" class="navbar__link">Contact</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="navbar__mobile-menu" id="mobile-menu">
+      <a href="/" class="navbar__mobile-link">Home</a>
+      <a href="/about/" class="navbar__mobile-link">About</a>
+      <a href="/projects/" class="navbar__mobile-link">Projects</a>
+      <a href="/#contact" class="navbar__mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="container project-hero__content">
+      <a href="/projects/" class="project-hero__back fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        All Projects
+      </a>
+      <h1 class="project-hero__title fade-in">
+        🚂 Rail<span class="gradient-text">Hygiene</span>
+      </h1>
+      <p class="project-hero__subtitle fade-in">
+        Check train coach hygiene ratings before you board. Enter your PNR and rate anonymously.
+        Making Indian Railways cleanliness transparent, one coach at a time.
+      </p>
+      <div class="project-hero__meta fade-in">
+        <div class="project-hero__meta-item">
+          <span class="project-hero__meta-label">Type</span>
+          Android App
+        </div>
+        <div class="project-hero__meta-item">
+          <span class="project-hero__meta-label">Status</span>
+          <span style="color: var(--color-accent-blue);">● Published on Play Store</span>
+        </div>
+        <div class="project-hero__meta-item">
+          <span class="project-hero__meta-label">Stack</span>
+          Kotlin · Jetpack Compose · Firebase
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT CONTENT -->
+  <section class="section">
+    <div class="container project-content">
+
+      <div class="fade-in">
+        <h2>The Problem</h2>
+        <p>
+          Indian Railways carries over 20 million passengers daily, yet there's no public system for
+          passengers to check or report the hygiene condition of their assigned coach before or after travel.
+          RailMadad exists for complaints, but it's a formal grievance system — not a quick transparency tool.
+        </p>
+      </div>
+
+      <div class="fade-in">
+        <h2>The Solution</h2>
+        <p>
+          RailHygiene lets passengers look up a train by PNR number and see community-sourced hygiene
+          ratings for specific coaches. After your journey, you can rate your coach anonymously — no account required,
+          no personal data collected.
+        </p>
+        <ul>
+          <li>PNR-based coach lookup with real-time train data</li>
+          <li>Anonymous 5-star hygiene rating system</li>
+          <li>Coach-level granularity — not just train-level</li>
+          <li>Clean Material Design 3 interface</li>
+          <li>Zero personal data collection — privacy-first design</li>
+          <li>Offline-capable with local caching</li>
+        </ul>
+      </div>
+
+      <div class="fade-in">
+        <h2>Tech Stack</h2>
+        <div class="skills-grid" style="max-width: 100%;">
+          <div class="skill-card">
+            <h3 class="skill-card__title">Frontend</h3>
+            <div class="skill-card__list">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Jetpack Compose</span>
+              <span class="tag">Material Design 3</span>
+              <span class="tag">Hilt DI</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card__title">Backend & Data</h3>
+            <div class="skill-card__list">
+              <span class="tag">Firebase Firestore</span>
+              <span class="tag">Cloud Functions</span>
+              <span class="tag">Indian Railways API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in" style="margin-top: var(--space-2xl);">
+        <h2>Links</h2>
+        <div style="display: flex; gap: var(--space-lg); flex-wrap: wrap; align-items: center;">
+          <a href="https://play.google.com/store/apps/details?id=com.nish.railhygiene" target="_blank" rel="noopener" class="btn btn--primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333zm2.302-2.302L14.5 12.707l-2.302-2.302 2.302-2.302zM5.864 2.658L16.8 8.99l-2.302 2.303z"/></svg>
+            Get on Google Play
+          </a>
+          <a href="https://railhygiene.in" target="_blank" rel="noopener" class="btn btn--secondary">
+            Visit Website
+          </a>
+          <a href="https://github.com/kinkate18nic/railhygiene-site" target="_blank" rel="noopener" class="btn btn--secondary btn--small">
+            Source Code (Site)
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__social">
+        <a href="https://github.com/kinkate18nic" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        <a href="https://www.linkedin.com/in/nishanth-kesavan/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      </div>
+      <p class="footer__text">© 2025 Nishanth Kesavan</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
