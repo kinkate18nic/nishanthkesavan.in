@@ -3,211 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Nishanth Kesavan</title>
-  <meta name="description" content="Projects built by Nishanth Kesavan — RailHygiene, KL State Lottery Data Hub, Kerala Flash-Flood Watch, ProteinDB, and Padham. Android apps and web tools for India.">
-  <meta property="og:title" content="Projects — Nishanth Kesavan">
+  <title>Work | Nishanth Kesavan</title>
+  <meta name="description" content="Independent products by Nishanth Kesavan across public data, Android, civic technology, and practical tools for Indian users.">
+  <meta name="theme-color" content="#f6f7f8">
+  <meta property="og:title" content="Work | Nishanth Kesavan">
+  <meta property="og:description" content="Practical tools built for gaps worth closing.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://nishanthkesavan.in/projects/">
   <link rel="canonical" href="https://nishanthkesavan.in/projects/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
     <div class="navbar__inner">
-      <a href="/" class="navbar__logo"><span class="navbar__logo-dot"></span>NK</a>
+      <a href="/" class="navbar__logo" aria-label="Nishanth Kesavan, home"><span class="navbar__logo-dot" aria-hidden="true"></span>NK</a>
       <div class="navbar__links">
         <a href="/" class="navbar__link">Home</a>
         <a href="/about/" class="navbar__link">About</a>
-        <a href="/projects/" class="navbar__link active">Projects</a>
+        <a href="/projects/" class="navbar__link active">Work</a>
         <a href="/#contact" class="navbar__link">Contact</a>
       </div>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
     <div class="navbar__mobile-menu" id="mobile-menu">
       <a href="/" class="navbar__mobile-link">Home</a>
       <a href="/about/" class="navbar__mobile-link">About</a>
-      <a href="/projects/" class="navbar__mobile-link">Projects</a>
+      <a href="/projects/" class="navbar__mobile-link">Work</a>
       <a href="/#contact" class="navbar__mobile-link">Contact</a>
     </div>
   </nav>
 
-  <!-- PROJECTS HUB -->
-  <section class="section" style="padding-top: calc(var(--nav-height) + var(--space-4xl));">
-    <div class="container">
-      <div class="section-header fade-in">
-        <p class="section-header__eyebrow">Portfolio</p>
-        <h1 class="section-header__title">All Projects</h1>
-        <p class="section-header__description">
-          These are tools I built after leaving corporate tech. Each one started with a specific problem I could not find an existing solution for.
-        </p>
+  <main>
+    <header class="page-intro">
+      <div class="container page-intro__grid">
+        <h1>Small tools for real gaps.</h1>
+        <p>Five products, each researched, shipped, and kept alive. No concept work and no filler projects.</p>
       </div>
+    </header>
 
-      <div class="projects-grid">
+    <section class="section" aria-label="All projects">
+      <div class="container">
+        <div class="work-index">
+          <a href="/projects/railhygiene/" class="work-item work-item--rail">
+            <span class="work-item__mark" aria-hidden="true">RH</span>
+            <div><h2 class="work-item__title">RailHygiene</h2><p class="work-item__status">Published on Play Store</p></div>
+            <div class="work-item__summary">
+              <p class="work-item__description">Coach-level hygiene ratings for Indian Railways passengers, using PNR lookup with no accounts and no personal data collection.</p>
+              <div class="work-item__tags"><span>Android</span><span>Kotlin</span><span>Firebase</span><span>Privacy-first</span></div>
+            </div>
+            <span class="work-item__arrow" aria-hidden="true">↗</span>
+          </a>
 
-        <!-- RailHygiene -->
-        <a href="/projects/railhygiene/" class="project-card fade-in fade-in-delay-1" id="hub-railhygiene">
-          <div class="project-card__image-wrap">
-            <div class="project-card__image" style="background: linear-gradient(135deg, #1a2332, #0d1926); display:flex; align-items:center; justify-content:center;">
-              <span style="font-size:3.5rem;">🚂</span>
+          <a href="/projects/flash-flood-keralam/" class="work-item work-item--flood">
+            <span class="work-item__mark" aria-hidden="true">FW</span>
+            <div><h2 class="work-item__title">Kerala Flash-Flood Watch</h2><p class="work-item__status">Live and monitored</p></div>
+            <div class="work-item__summary">
+              <p class="work-item__description">A decision-support dashboard that brings IMD warnings, radar nowcasts, satellite rainfall, river levels, and reservoir data together.</p>
+              <div class="work-item__tags"><span>Public data</span><span>JavaScript</span><span>NASA IMERG</span><span>GitHub Actions</span></div>
             </div>
-            <span class="project-card__badge project-card__badge--published">Play Store</span>
-          </div>
-          <div class="project-card__body">
-            <h2 class="project-card__title">RailHygiene</h2>
-            <p class="project-card__description">
-              Indian Railways carries over 20 million passengers daily, yet there is no public system
-              to check or report the cleanliness of a specific coach. RailHygiene lets you look up a train
-              by PNR and rate your coach anonymously, no account required.
-            </p>
-            <div class="project-card__tags">
-              <span class="tag">Kotlin</span>
-              <span class="tag">Jetpack Compose</span>
-              <span class="tag">Firebase</span>
-              <span class="tag">Android</span>
-              <span class="tag">AI-Assisted</span>
-            </div>
-            <span class="project-card__link">
-              View project
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </span>
-          </div>
-        </a>
+            <span class="work-item__arrow" aria-hidden="true">↗</span>
+          </a>
 
-        <!-- Kerala Flash-Flood Watch -->
-        <a href="/projects/flash-flood-keralam/" class="project-card fade-in fade-in-delay-2" id="hub-flood">
-          <div class="project-card__image-wrap">
-            <div class="project-card__image" style="background: linear-gradient(135deg, #0d1f26, #0a1828); display:flex; align-items:center; justify-content:center;">
-              <span style="font-size:3.5rem;">🌊</span>
+          <a href="/projects/kerala-lottery-hub/" class="work-item work-item--lottery">
+            <span class="work-item__mark" aria-hidden="true">KL</span>
+            <div><h2 class="work-item__title">KL State Lottery Data Hub</h2><p class="work-item__status">Live and maintained</p></div>
+            <div class="work-item__summary">
+              <p class="work-item__description">Independent lottery result verification and analysis, built by turning years of official PDF records into searchable structured data.</p>
+              <div class="work-item__tags"><span>Next.js</span><span>Python</span><span>PostgreSQL</span><span>Cloudflare</span></div>
             </div>
-            <span class="project-card__badge project-card__badge--live">Live Dashboard</span>
-          </div>
-          <div class="project-card__body">
-            <h2 class="project-card__title">Kerala Flash-Flood Watch</h2>
-            <p class="project-card__description">
-              During Kerala monsoons, warning data is scattered across IMD, CWC, KSDMA, and satellite sources.
-              This dashboard brings all of them into one place, making it practical for anyone
-              monitoring flood risk to interpret multiple signals together.
-            </p>
-            <div class="project-card__tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">NASA IMERG</span>
-              <span class="tag">AI-Assisted</span>
-            </div>
-            <span class="project-card__link">
-              View project
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </span>
-          </div>
-        </a>
+            <span class="work-item__arrow" aria-hidden="true">↗</span>
+          </a>
 
-        <!-- Protein Aggregator -->
-        <a href="/projects/protein-aggregator/" class="project-card fade-in fade-in-delay-3" id="hub-protein">
-          <div class="project-card__image-wrap">
-            <div class="project-card__image" style="background: linear-gradient(135deg, #1a1d2e, #13162a); display:flex; align-items:center; justify-content:center;">
-              <span style="font-size:3.5rem;">🧬</span>
+          <a href="/projects/protein-aggregator/" class="work-item work-item--protein">
+            <span class="work-item__mark" aria-hidden="true">PD</span>
+            <div><h2 class="work-item__title">ProteinDB</h2><p class="work-item__status">Live web app</p></div>
+            <div class="work-item__summary">
+              <p class="work-item__description">An affiliate-free way to compare Indian protein supplements using normalized product data, quality checks, and protein-per-rupee value.</p>
+              <div class="work-item__tags"><span>Next.js</span><span>TypeScript</span><span>Python</span><span>Web scraping</span></div>
             </div>
-            <span class="project-card__badge project-card__badge--live">Live Web App</span>
-          </div>
-          <div class="project-card__body">
-            <h2 class="project-card__title">ProteinDB</h2>
-            <p class="project-card__description">
-              India's supplement market is crowded with options across multiple platforms, and most review
-              sites are affiliate-driven. ProteinDB scrapes product data, normalizes it, and ranks
-              proteins by value per rupee with objective quality scoring.
-            </p>
-            <div class="project-card__tags">
-              <span class="tag">Next.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Python</span>
-              <span class="tag">Web Scraping</span>
-              <span class="tag">AI-Assisted</span>
-            </div>
-            <span class="project-card__link">
-              View project
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </span>
-          </div>
-        </a>
+            <span class="work-item__arrow" aria-hidden="true">↗</span>
+          </a>
 
-        <!-- Padham -->
-        <a href="/projects/padham/" class="project-card fade-in fade-in-delay-4" id="hub-padham">
-          <div class="project-card__image-wrap">
-            <div class="project-card__image" style="background: linear-gradient(135deg, #1f1a2e, #18132a); display:flex; align-items:center; justify-content:center;">
-              <span style="font-size:3.5rem;">📖</span>
+          <a href="/projects/padham/" class="work-item work-item--padham">
+            <span class="work-item__mark" aria-hidden="true">PA</span>
+            <div><h2 class="work-item__title">Padham</h2><p class="work-item__status">Published on Play Store</p></div>
+            <div class="work-item__summary">
+              <p class="work-item__description">A calm, offline Malayalam spiritual text reader that presents one verse at a time, without ads, accounts, or tracking.</p>
+              <div class="work-item__tags"><span>Android</span><span>Kotlin</span><span>Offline-first</span><span>Malayalam</span></div>
             </div>
-            <span class="project-card__badge project-card__badge--published">Play Store</span>
-          </div>
-          <div class="project-card__body">
-            <h2 class="project-card__title">Padham</h2>
-            <p class="project-card__description">
-              Many Malayalis grow up hearing texts like Harinamakeerthanam but never get to learn them
-              properly. Padham presents one verse at a time in a calm, minimal reading interface,
-              fully offline, with zero ads and zero tracking.
-            </p>
-            <div class="project-card__tags">
-              <span class="tag">Kotlin</span>
-              <span class="tag">Jetpack Compose</span>
-              <span class="tag">Local-first</span>
-              <span class="tag">Android</span>
-              <span class="tag">AI-Assisted</span>
-            </div>
-            <span class="project-card__link">
-              View project
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </span>
-          </div>
-        </a>
-
-        <!-- KL State Lottery Data Hub -->
-        <a href="/projects/kerala-lottery-hub/" class="project-card fade-in fade-in-delay-5" id="hub-lottery">
-          <div class="project-card__image-wrap">
-            <div class="project-card__image" style="background: linear-gradient(135deg, #122c1e, #0a1a11); display:flex; align-items:center; justify-content:center;">
-              <span style="font-size:3.5rem;">🎫</span>
-            </div>
-            <span class="project-card__badge project-card__badge--live">Live Web App</span>
-          </div>
-          <div class="project-card__body">
-            <h2 class="project-card__title">KL State Lottery Data Hub</h2>
-            <p class="project-card__description">
-              Kerala State Lotteries have run for decades, but searching through historical result sheets was
-              a tedious chore. This platform parses over 20 years of PDF results and offers the most robust,
-              independent search, verification, and statistics engine for lottery draws since 2017.
-            </p>
-            <div class="project-card__tags">
-              <span class="tag">Next.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Python</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Cloudflare Workers</span>
-              <span class="tag">AI-Assisted</span>
-            </div>
-            <span class="project-card__link">
-              View project
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </span>
-          </div>
-        </a>
-
+            <span class="work-item__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
+    <section class="section contact-block" aria-labelledby="project-contact-title">
+      <div class="container contact-block__grid">
+        <div>
+          <h2 id="project-contact-title">Need something this practical?</h2>
+          <p>Bring me a specific problem, an awkward data source, or a website that is not doing its job.</p>
+        </div>
+        <a href="mailto:nishanth.kesavan@outlook.com" class="btn btn--primary">Discuss a project</a>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="container">
+      <p class="footer__text">© 2026 Nishanth Kesavan. Built and maintained in Bengaluru.</p>
       <div class="footer__social">
-        <a href="https://github.com/kinkate18nic" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
-        <a href="https://www.linkedin.com/in/nishanth-kesavan/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-        <a href="https://x.com/kinkate18nic" target="_blank" rel="noopener" class="footer__social-link" aria-label="X / Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="https://github.com/kinkate18nic" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12z"/></svg></a>
+        <a href="https://www.linkedin.com/in/nishanth-kesavan/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.564v11.452zM5.337 7.433A2.062 2.062 0 1 1 5.337 3.31a2.062 2.062 0 0 1 0 4.123zM7.119 20.452H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg></a>
       </div>
-      <p class="footer__text">© 2026 Nishanth Kesavan. Built with patience and purpose.</p>
     </div>
   </footer>
-
   <script src="/js/main.js"></script>
 </body>
 </html>

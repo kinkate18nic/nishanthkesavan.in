@@ -1,111 +1,95 @@
-/* ============================================================
-   DESIGN TOKENS — nishanthkesavan.in
-   ============================================================ */
-
 :root {
-  /* ── Color Palette ─────────────────────────────────────── */
-  --color-bg-primary:     #06080d;
-  --color-bg-secondary:   #0c1017;
-  --color-bg-tertiary:    #111822;
-  --color-bg-card:        rgba(17, 24, 34, 0.65);
-  --color-bg-card-hover:  rgba(22, 32, 48, 0.8);
-  --color-bg-glass:       rgba(255, 255, 255, 0.03);
+  /* Palette: cool paper, engineering ink, decisive cobalt, highlighter lime */
+  --color-bg-primary: oklch(97.5% 0.004 250);
+  --color-bg-secondary: oklch(100% 0 0);
+  --color-bg-tertiary: oklch(93.5% 0.008 250);
+  --color-bg-card: oklch(100% 0 0);
+  --color-bg-card-hover: oklch(96% 0.014 255);
+  --color-bg-glass: oklch(100% 0 0 / 0.94);
 
-  --color-text-primary:   #e8edf5;
-  --color-text-secondary: #8b95a8;
-  --color-text-muted:     #5a6478;
-  --color-text-inverse:   #06080d;
+  --color-text-primary: oklch(20% 0.035 250);
+  --color-text-secondary: oklch(40% 0.03 250);
+  --color-text-muted: oklch(50% 0.024 250);
+  --color-text-inverse: oklch(98% 0.004 250);
 
-  --color-accent:         #00d4aa;
-  --color-accent-hover:   #00f0c0;
-  --color-accent-dim:     rgba(0, 212, 170, 0.12);
-  --color-accent-blue:    #0090ff;
-  --color-accent-purple:  #7c5cff;
-  --color-accent-orange:  #ff8a50;
+  --color-accent: oklch(47% 0.24 264);
+  --color-accent-hover: oklch(40% 0.22 264);
+  --color-accent-dim: oklch(91% 0.045 264);
+  --color-accent-blue: oklch(47% 0.24 264);
+  --color-accent-purple: oklch(51% 0.19 304);
+  --color-accent-orange: oklch(64% 0.2 34);
+  --color-highlight: oklch(92% 0.2 116);
+  --color-line: oklch(86% 0.012 250);
+  --color-line-strong: oklch(68% 0.025 250);
 
-  --gradient-accent:      linear-gradient(135deg, #00d4aa 0%, #0090ff 100%);
-  --gradient-hero:        linear-gradient(135deg, #06080d 0%, #0c1828 50%, #0a1220 100%);
-  --gradient-card-border: linear-gradient(135deg, rgba(0, 212, 170, 0.3), rgba(0, 144, 255, 0.1));
-  --gradient-text:        linear-gradient(135deg, #00d4aa, #0090ff, #7c5cff);
-  --gradient-mesh:        radial-gradient(ellipse at 20% 80%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
-                          radial-gradient(ellipse at 80% 20%, rgba(0, 144, 255, 0.06) 0%, transparent 50%),
-                          radial-gradient(ellipse at 50% 50%, rgba(124, 92, 255, 0.04) 0%, transparent 50%);
+  --font-heading: 'Bricolage Grotesque', 'Arial Narrow', sans-serif;
+  --font-body: 'Atkinson Hyperlegible Next', 'Segoe UI', sans-serif;
+  --font-mono: 'Atkinson Hyperlegible Next', 'Segoe UI', sans-serif;
 
-  /* ── Typography ────────────────────────────────────────── */
-  --font-heading:         'Space Grotesk', system-ui, -apple-system, sans-serif;
-  --font-body:            'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono:            'JetBrains Mono', 'Fira Code', monospace;
+  --fs-hero: clamp(3.25rem, 8vw, 6rem);
+  --fs-h1: clamp(2.75rem, 6vw, 5rem);
+  --fs-h2: clamp(2rem, 4vw, 3.5rem);
+  --fs-h3: clamp(1.35rem, 2.5vw, 2rem);
+  --fs-h4: 1.15rem;
+  --fs-body: 1.05rem;
+  --fs-body-lg: clamp(1.15rem, 1.7vw, 1.35rem);
+  --fs-small: 0.94rem;
+  --fs-caption: 0.8rem;
 
-  --fs-hero:              clamp(2.5rem, 6vw, 4.5rem);
-  --fs-h1:                clamp(2rem, 4vw, 3rem);
-  --fs-h2:                clamp(1.5rem, 3vw, 2.25rem);
-  --fs-h3:                clamp(1.125rem, 2vw, 1.5rem);
-  --fs-h4:                1.125rem;
-  --fs-body:              1rem;
-  --fs-body-lg:           1.125rem;
-  --fs-small:             0.875rem;
-  --fs-caption:           0.75rem;
+  --fw-regular: 400;
+  --fw-medium: 520;
+  --fw-semibold: 650;
+  --fw-bold: 760;
 
-  --fw-regular:           400;
-  --fw-medium:            500;
-  --fw-semibold:          600;
-  --fw-bold:              700;
+  --lh-tight: 0.98;
+  --lh-normal: 1.55;
+  --lh-relaxed: 1.72;
 
-  --lh-tight:             1.2;
-  --lh-normal:            1.6;
-  --lh-relaxed:           1.8;
+  --ls-tight: -0.035em;
+  --ls-normal: 0;
+  --ls-wide: 0.035em;
+  --ls-wider: 0.075em;
 
-  --ls-tight:             -0.02em;
-  --ls-normal:            0;
-  --ls-wide:              0.05em;
-  --ls-wider:             0.1em;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6.5rem;
+  --space-5xl: 9rem;
 
-  /* ── Spacing ───────────────────────────────────────────── */
-  --space-xs:             0.25rem;
-  --space-sm:             0.5rem;
-  --space-md:             1rem;
-  --space-lg:             1.5rem;
-  --space-xl:             2rem;
-  --space-2xl:            3rem;
-  --space-3xl:            4rem;
-  --space-4xl:            6rem;
-  --space-5xl:            8rem;
+  --max-width: 1240px;
+  --max-width-narrow: 780px;
+  --nav-height: 72px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 14px;
+  --border-radius-xl: 14px;
+  --border-radius-full: 999px;
 
-  /* ── Layout ────────────────────────────────────────────── */
-  --max-width:            1200px;
-  --max-width-narrow:     800px;
-  --nav-height:           72px;
-  --border-radius-sm:     6px;
-  --border-radius-md:     12px;
-  --border-radius-lg:     20px;
-  --border-radius-xl:     28px;
-  --border-radius-full:   9999px;
+  --shadow-sm: 0 3px 8px oklch(20% 0.035 250 / 0.12);
+  --shadow-md: 0 5px 8px oklch(20% 0.035 250 / 0.16);
+  --shadow-lg: 0 8px 8px oklch(20% 0.035 250 / 0.18);
+  --shadow-xl: 0 8px 8px oklch(20% 0.035 250 / 0.2);
+  --shadow-glow: none;
+  --shadow-glow-blue: none;
 
-  /* ── Shadows & Effects ─────────────────────────────────── */
-  --shadow-sm:            0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md:            0 4px 16px rgba(0, 0, 0, 0.4);
-  --shadow-lg:            0 8px 32px rgba(0, 0, 0, 0.5);
-  --shadow-xl:            0 16px 48px rgba(0, 0, 0, 0.6);
-  --shadow-glow:          0 0 20px rgba(0, 212, 170, 0.15);
-  --shadow-glow-blue:     0 0 20px rgba(0, 144, 255, 0.15);
+  --blur-glass: 12px;
+  --blur-glass-heavy: 18px;
 
-  --blur-glass:           16px;
-  --blur-glass-heavy:     24px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 140ms;
+  --duration-normal: 260ms;
+  --duration-slow: 520ms;
+  --duration-slower: 760ms;
 
-  /* ── Transitions ───────────────────────────────────────── */
-  --ease-out:             cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out:          cubic-bezier(0.45, 0, 0.55, 1);
-  --ease-spring:          cubic-bezier(0.34, 1.56, 0.64, 1);
-
-  --duration-fast:        150ms;
-  --duration-normal:      300ms;
-  --duration-slow:        500ms;
-  --duration-slower:      800ms;
-
-  /* ── Z-index ───────────────────────────────────────────── */
-  --z-base:               1;
-  --z-card:               10;
-  --z-nav:                100;
-  --z-overlay:            200;
-  --z-modal:              300;
+  --z-base: 1;
+  --z-card: 10;
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
 }

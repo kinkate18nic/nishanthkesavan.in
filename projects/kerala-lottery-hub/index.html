@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KL State Lottery Data Hub — Nishanth Kesavan</title>
+  <title>KL State Lottery Data Hub | Nishanth Kesavan</title>
   <meta name="description" content="KL State Lottery Data Hub: A robust, independent search and verification platform for Kerala State Lottery draws. Parses decades of PDF results into structured database records.">
   <meta property="og:title" content="KL State Lottery Data Hub">
   <meta property="og:description" content="Independent verification platform and search engine combining Python data pipelines and Next.js serverless apps to search decades of Kerala lottery results.">
   <meta property="og:url" content="https://nishanthkesavan.in/projects/kerala-lottery-hub/">
   <link rel="canonical" href="https://nishanthkesavan.in/projects/kerala-lottery-hub/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎫</text></svg>">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
 </head>
 <body>
 
@@ -21,15 +21,15 @@
       <div class="navbar__links">
         <a href="/" class="navbar__link">Home</a>
         <a href="/about/" class="navbar__link">About</a>
-        <a href="/projects/" class="navbar__link active">Projects</a>
+        <a href="/projects/" class="navbar__link active">Work</a>
         <a href="/#contact" class="navbar__link">Contact</a>
       </div>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
     <div class="navbar__mobile-menu" id="mobile-menu">
       <a href="/" class="navbar__mobile-link">Home</a>
       <a href="/about/" class="navbar__mobile-link">About</a>
-      <a href="/projects/" class="navbar__mobile-link">Projects</a>
+      <a href="/projects/" class="navbar__mobile-link">Work</a>
       <a href="/#contact" class="navbar__mobile-link">Contact</a>
     </div>
   </nav>
@@ -42,7 +42,7 @@
         All Projects
       </a>
       <h1 class="project-hero__title fade-in">
-        🎫 KL State Lottery <span class="gradient-text">Data Hub</span>
+        KL State Lottery <span class="gradient-text">Data Hub</span>
       </h1>
       <p class="project-hero__subtitle fade-in">
         The most robust, independent, and historically complete verification platform for Kerala State Lottery draws. Powered by a Python data pipeline that ingested and normalized years of historical PDF results into a relational database, it offers lightning-fast result verification and detailed statistical analysis on Cloudflare Workers.
@@ -94,20 +94,20 @@
           The foundation of the project is a custom data pipeline built in Python to download, parse, clean, and ingest results:
         </p>
         <ul>
-          <li><strong>Document Crawling</strong> — Periodically crawls official sites using BeautifulSoup to pull newly published daily PDF results.</li>
-          <li><strong>PDF Text Extraction</strong> — Employs advanced PDF querying rules to parse tabular draw data, identifying winning numbers, prize tires, and agent codes.</li>
-          <li><strong>Layout Normalization</strong> — Handles decades of structural shifts, table cell merges, multi-column ticket layouts, and character coding variations in the source documents.</li>
-          <li><strong>Database Ingestion</strong> — Sanitizes and maps parsed records into a relational database, applying primary keys and structured relations for rapid, indexable querying.</li>
+          <li><strong>Document Crawling:</strong> Periodically crawls official sites using BeautifulSoup to pull newly published daily PDF results.</li>
+          <li><strong>PDF Text Extraction:</strong> Employs advanced PDF querying rules to parse tabular draw data, identifying winning numbers, prize tiers, and agent codes.</li>
+          <li><strong>Layout Normalization:</strong> Handles decades of structural shifts, table cell merges, multi-column ticket layouts, and character coding variations in the source documents.</li>
+          <li><strong>Database Ingestion:</strong> Sanitizes and maps parsed records into a relational database, applying primary keys and structured relations for rapid, indexable querying.</li>
         </ul>
       </div>
 
       <div class="fade-in">
         <h2>Key Features</h2>
         <ul>
-          <li><strong>Instant Result Verification</strong> — Search any ticket series and number to check winning status and prize tiers across multiple draws instantly.</li>
-          <li><strong>Historically Complete Archive</strong> — A fully searchable relational directory of draws spanning historically from 2017 to the present day.</li>
-          <li><strong>Visual Statistics & Analytics</strong> — Clean dashboards reflecting draw frequencies, winning ticket series distributions, and historical trends.</li>
-          <li><strong>Serverless & Global Scaling</strong> — Fast edge rendering and API responses backed by serverless cloud compute.</li>
+          <li><strong>Instant Result Verification:</strong> Search any ticket series and number to check winning status and prize tiers across multiple draws instantly.</li>
+          <li><strong>Historically Complete Archive:</strong> A fully searchable relational directory of draws spanning historically from 2017 to the present day.</li>
+          <li><strong>Visual Statistics and Analytics:</strong> Clean dashboards reflecting draw frequencies, winning ticket series distributions, and historical trends.</li>
+          <li><strong>Serverless and Global Scaling:</strong> Fast edge rendering and API responses backed by serverless cloud compute.</li>
         </ul>
       </div>
 

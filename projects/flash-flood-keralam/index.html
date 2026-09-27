@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kerala Flash-Flood Watch — Nishanth Kesavan</title>
+  <title>Kerala Flash-Flood Watch | Nishanth Kesavan</title>
   <meta name="description" content="Kerala Flash-Flood Watch: A decision-support dashboard for Kerala monsoon and flood monitoring. Combines IMD warnings, NASA IMERG, CWC, and KSDMA data.">
   <meta property="og:title" content="Kerala Flash-Flood Watch">
   <meta property="og:description" content="Decision-support dashboard combining official warnings, satellite rainfall, radar, and reservoir data for Kerala monsoon monitoring.">
   <meta property="og:url" content="https://nishanthkesavan.in/projects/flash-flood-keralam/">
   <link rel="canonical" href="https://nishanthkesavan.in/projects/flash-flood-keralam/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
 </head>
 <body>
 
@@ -21,15 +21,15 @@
       <div class="navbar__links">
         <a href="/" class="navbar__link">Home</a>
         <a href="/about/" class="navbar__link">About</a>
-        <a href="/projects/" class="navbar__link active">Projects</a>
+        <a href="/projects/" class="navbar__link active">Work</a>
         <a href="/#contact" class="navbar__link">Contact</a>
       </div>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
     <div class="navbar__mobile-menu" id="mobile-menu">
       <a href="/" class="navbar__mobile-link">Home</a>
       <a href="/about/" class="navbar__mobile-link">About</a>
-      <a href="/projects/" class="navbar__mobile-link">Projects</a>
+      <a href="/projects/" class="navbar__mobile-link">Work</a>
       <a href="/#contact" class="navbar__mobile-link">Contact</a>
     </div>
   </nav>
@@ -42,7 +42,7 @@
         All Projects
       </a>
       <h1 class="project-hero__title fade-in">
-        🌊 Kerala <span class="gradient-text">Flash-Flood Watch</span>
+        Kerala <span class="gradient-text">Flash-Flood Watch</span>
       </h1>
       <p class="project-hero__subtitle fade-in">
         A public, static-first decision-support dashboard for Kerala monsoon and flood monitoring. It combines official IMD warnings, CWC hydrology data, radar nowcasts, NASA satellite rainfall, and reservoir status into one consolidated view, because during an active monsoon event, the information you need is scattered across ten different websites.
@@ -91,25 +91,25 @@
 
         <h3>Official Warning Sources</h3>
         <ul>
-          <li><strong>IMD CAP RSS</strong> — Official severe weather CAP feed for Kerala</li>
-          <li><strong>IMD District Warning</strong> — District-level warning map</li>
-          <li><strong>IMD District Nowcast</strong> — Short-lead district warning/nowcast</li>
-          <li><strong>IMD Station Nowcast</strong> — Station-level nowcast</li>
-          <li><strong>IMD Flash Flood Bulletin</strong> — Expert guidance</li>
+          <li><strong>IMD CAP RSS:</strong> Official severe weather CAP feed for Kerala</li>
+          <li><strong>IMD District Warning:</strong> District-level warning map</li>
+          <li><strong>IMD District Nowcast:</strong> Short-lead district warning/nowcast</li>
+          <li><strong>IMD Station Nowcast:</strong> Station-level nowcast</li>
+          <li><strong>IMD Flash Flood Bulletin:</strong> Expert guidance</li>
         </ul>
 
         <h3>Hydrology & Reservoir</h3>
         <ul>
-          <li><strong>India-WRIS CWC Rainfall</strong> — Official station-based rainfall</li>
-          <li><strong>India-WRIS CWC River Water Level</strong> — River level context</li>
-          <li><strong>CWC FFS Live River Levels</strong> — Flood forecasting river stage data</li>
-          <li><strong>KSDMA Dam Levels (KSEB + Irrigation)</strong> — Daily reservoir & outflow status</li>
+          <li><strong>India-WRIS CWC Rainfall:</strong> Official station-based rainfall</li>
+          <li><strong>India-WRIS CWC River Water Level:</strong> River level context</li>
+          <li><strong>CWC FFS Live River Levels:</strong> Flood forecasting river stage data</li>
+          <li><strong>KSDMA Dam Levels (KSEB + Irrigation):</strong> Daily reservoir and outflow status</li>
         </ul>
 
         <h3>Environmental Context</h3>
         <ul>
-          <li><strong>RainViewer Radar Nowcast</strong> — Short-lead radar signal</li>
-          <li><strong>NASA IMERG Near-Real-Time</strong> — Satellite rainfall backbone</li>
+          <li><strong>RainViewer Radar Nowcast:</strong> Short-lead radar signal</li>
+          <li><strong>NASA IMERG Near-Real-Time:</strong> Satellite rainfall backbone</li>
         </ul>
       </div>
 
@@ -117,9 +117,9 @@
         <h2>Area Levels</h2>
         <p>The model works at three practical levels:</p>
         <ul>
-          <li><strong>Districts (14)</strong> — Main operational layer. Most balanced scoring.</li>
-          <li><strong>Taluks (61)</strong> — Finer risk-summary layer with localized rainfall context</li>
-          <li><strong>Hotspots</strong> — Curated named places with known flood-sensitive geography (steep catchments, floodplains, confluences, below-sea-level basins, dam-downstream pockets)</li>
+          <li><strong>Districts (14):</strong> Main operational layer. Most balanced scoring.</li>
+          <li><strong>Taluks (61):</strong> Finer risk-summary layer with localized rainfall context</li>
+          <li><strong>Hotspots:</strong> Curated named places with known flood-sensitive geography (steep catchments, floodplains, confluences, below-sea-level basins, dam-downstream pockets)</li>
         </ul>
       </div>
 

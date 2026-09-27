@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 — Page Not Found</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-  <link rel="stylesheet" href="/css/styles.css">
+  <meta name="theme-color" content="#f6f7f8">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
 </head>
 <body>
 
@@ -15,15 +16,15 @@
       <div class="navbar__links">
         <a href="/" class="navbar__link">Home</a>
         <a href="/about/" class="navbar__link">About</a>
-        <a href="/projects/" class="navbar__link">Projects</a>
+        <a href="/projects/" class="navbar__link">Work</a>
         <a href="/#contact" class="navbar__link">Contact</a>
       </div>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
     <div class="navbar__mobile-menu" id="mobile-menu">
       <a href="/" class="navbar__mobile-link">Home</a>
       <a href="/about/" class="navbar__mobile-link">About</a>
-      <a href="/projects/" class="navbar__mobile-link">Projects</a>
+      <a href="/projects/" class="navbar__mobile-link">Work</a>
       <a href="/#contact" class="navbar__mobile-link">Contact</a>
     </div>
   </nav>
@@ -31,8 +32,8 @@
   <main class="error-page">
     <div>
       <p class="error-page__code">404</p>
-      <p class="error-page__message">The page you are looking for does not exist. It may have been moved or removed.</p>
-      <a href="/" class="btn btn--primary">Back to Home</a>
+      <p class="error-page__message">This path does not lead anywhere useful. The work is still one click away.</p>
+      <a href="/projects/" class="btn btn--primary">Explore the work</a>
     </div>
   </main>
 

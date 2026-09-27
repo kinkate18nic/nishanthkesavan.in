@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-27T00:00:00+05:30",
+  "title": "Design System: Nishanth Kesavan",
+  "extensions": {
+    "colorMeta": {
+      "signal-cobalt": {
+        "role": "primary",
+        "displayName": "Signal Cobalt",
+        "canonical": "oklch(47% 0.24 264)",
+        "tonalRamp": ["oklch(15% 0.08 264)", "oklch(25% 0.13 264)", "oklch(35% 0.19 264)", "oklch(47% 0.24 264)", "oklch(58% 0.2 264)", "oklch(70% 0.14 264)", "oklch(84% 0.08 264)", "oklch(95% 0.025 264)"]
+      },
+      "highlighter-lime": {
+        "role": "secondary",
+        "displayName": "Highlighter Lime",
+        "canonical": "oklch(92% 0.2 116)",
+        "tonalRamp": ["oklch(18% 0.05 116)", "oklch(30% 0.08 116)", "oklch(43% 0.11 116)", "oklch(56% 0.14 116)", "oklch(68% 0.17 116)", "oklch(80% 0.19 116)", "oklch(92% 0.2 116)", "oklch(97% 0.08 116)"]
+      },
+      "working-paper": {
+        "role": "neutral",
+        "displayName": "Working Paper",
+        "canonical": "oklch(97.5% 0.004 250)",
+        "tonalRamp": ["oklch(15% 0.01 250)", "oklch(27% 0.01 250)", "oklch(40% 0.008 250)", "oklch(53% 0.007 250)", "oklch(66% 0.006 250)", "oklch(78% 0.005 250)", "oklch(89% 0.004 250)", "oklch(97.5% 0.004 250)"]
+      },
+      "engineering-ink": {
+        "role": "neutral",
+        "displayName": "Engineering Ink",
+        "canonical": "oklch(20% 0.035 250)",
+        "tonalRamp": ["oklch(12% 0.025 250)", "oklch(20% 0.035 250)", "oklch(31% 0.032 250)", "oklch(44% 0.028 250)", "oklch(58% 0.022 250)", "oklch(71% 0.016 250)", "oklch(84% 0.01 250)", "oklch(95% 0.005 250)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "One dominant statement per viewport." },
+      "headline": { "displayName": "Headline", "purpose": "Page and section headings." },
+      "body": { "displayName": "Body", "purpose": "Long-form descriptions and case studies." },
+      "label": { "displayName": "Label", "purpose": "Status, metadata, and compact tags." }
+    },
+    "shadows": [
+      { "name": "portrait-offset", "value": "8px 8px 0 var(--color-text-primary)", "purpose": "Physical-print effect for the personal portrait only." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Entrances and direct manipulation feedback." },
+      { "name": "duration-normal", "value": "260ms", "purpose": "Hover and state changes." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "720px" },
+      { "name": "medium", "value": "900px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The default action on neutral surfaces.",
+      "html": "<button class=\"ds-btn-primary\">Explore the work</button>",
+      "css": ".ds-btn-primary { min-height:48px; padding:12px 20px; border:2px solid transparent; border-radius:4px; background:var(--color-accent); color:var(--color-text-inverse); font:700 15px var(--font-body); transition:transform 260ms cubic-bezier(.16,1,.3,1), background-color 140ms; } .ds-btn-primary:hover { transform:translateY(-2px); background:var(--color-accent-hover); } .ds-btn-primary:focus-visible { outline:3px solid var(--color-highlight); outline-offset:4px; }"
+    },
+    {
+      "name": "Highlight Button",
+      "kind": "button",
+      "refersTo": "button-highlight",
+      "description": "High-contrast action for cobalt or ink surfaces.",
+      "html": "<button class=\"ds-btn-highlight\">Email Nishanth</button>",
+      "css": ".ds-btn-highlight { min-height:48px; padding:12px 20px; border:2px solid transparent; border-radius:4px; background:var(--color-highlight); color:var(--color-text-primary); font:700 15px var(--font-body); transition:transform 260ms cubic-bezier(.16,1,.3,1); } .ds-btn-highlight:hover { transform:translateY(-2px); } .ds-btn-highlight:focus-visible { outline:3px solid white; outline-offset:4px; }"
+    },
+    {
+      "name": "Technology Tag",
+      "kind": "chip",
+      "description": "Compact, non-interactive project metadata.",
+      "html": "<span class=\"ds-tag\">Public data</span>",
+      "css": ".ds-tag { display:inline-flex; align-items:center; min-height:28px; padding:4px 10px; border-radius:4px; background:var(--color-bg-tertiary); color:var(--color-text-secondary); font:650 13px var(--font-body); }"
+    },
+    {
+      "name": "Project Mark",
+      "kind": "custom",
+      "refersTo": "project-mark",
+      "description": "A compact two-letter identity for every project row.",
+      "html": "<span class=\"ds-project-mark\">RH</span>",
+      "css": ".ds-project-mark { display:grid; width:54px; height:54px; place-items:center; border-radius:4px; background:var(--color-accent); color:var(--color-text-inverse); font:780 16px var(--font-heading); }"
+    },
+    {
+      "name": "Navigation Mark",
+      "kind": "nav",
+      "description": "The compact NK monogram used in the fixed navigation.",
+      "html": "<a class=\"ds-nav-mark\" href=\"#\">NK</a>",
+      "css": ".ds-nav-mark { display:grid; width:31px; height:31px; place-items:center; background:var(--color-accent); color:var(--color-text-inverse); font:780 12px var(--font-heading); text-decoration:none; } .ds-nav-mark:focus-visible { outline:3px solid var(--color-highlight); outline-offset:4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Builder's Field Kit",
+    "overview": "The site should feel like a well-used kit assembled by someone who understands the job: a clean working surface, clear labels, bright markers, and no ornamental parts. It is expressive through decisive scale and color, but every visual move still has a practical role.",
+    "keyCharacteristics": ["High-contrast cobalt and lime used as confident working colors.", "Large, compressed display type paired with a highly legible body face.", "Ruled lists and asymmetric compositions in place of repetitive cards.", "Personal details presented as evidence, not decoration.", "Responsive layouts that become linear and calm on small screens."],
+    "rules": [
+      { "name": "The Marker Rule", "body": "Lime marks a decision or a live status. It is never used as ambient decoration.", "section": "colors" },
+      { "name": "The No Gradient Rule", "body": "All colors are solid. Gradients are prohibited throughout the interface.", "section": "colors" },
+      { "name": "The One Loud Sentence Rule", "body": "Every viewport may have one dominant typographic idea. Supporting text stays deliberately quieter.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Cards and sections do not float. If a surface has both a visible border and a soft shadow, the treatment is wrong.", "section": "elevation" }
+    ],
+    "dos": ["Do use signal cobalt for decisive surfaces and highlighter lime for actions or live status.", "Do keep body copy within 65 to 75 characters per line.", "Do let project facts and maintained status provide credibility.", "Do use asymmetric spacing and full-width ruled lists to keep the composition human.", "Do respect reduced-motion settings and preserve visible content without JavaScript."],
+    "donts": ["Don't create generic dark developer portfolios, neon gradients, floating blobs, or glass cards.", "Don't use emoji placeholders, generic card grids, startup slogans, or inflated expertise claims.", "Don't hide the role of AI in the work or turn it into a novelty badge.", "Don't use gradient text, rounded cards over 14px, or repeated uppercase section eyebrows.", "Don't pair a 1px border with a wide soft shadow on the same component."]
+  }
+}
